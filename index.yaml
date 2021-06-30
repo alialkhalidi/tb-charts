@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  alb-ingress-class:
+  - apiVersion: v1
+    appVersion: v2.2.0
+    created: "2021-06-30T19:58:10.885833113Z"
+    description: ALB Ingress Helm chart for Kubernetes
+    digest: f98f99e99d8034ec90ec9538759e9119b03ba6fd650b2567f9592ab099ef980a
+    home: https://github.com/alialkhalidi/tb-charts
+    keywords:
+    - eks
+    - alb
+    - load balancer
+    - ingress
+    maintainers:
+    - email: alialkhalidi@users.noreply.github.com
+      name: alialkhalidi
+      url: https://github.com/alialkhalidi/
+    name: alb-ingress-class
+    sources:
+    - https://github.com/alialkhalidi/tb-charts
+    urls:
+    - https://github.com/alialkhalidi/tb-charts/releases/download/alb-ingress-class-0.0.1/alb-ingress-class-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-06-30T19:58:10.885844814Z"
