@@ -1,6 +1,6 @@
 # ALB Ingress
 
-ALB Ingress Helm chart for Kubernetes
+ALB Ingress Class Helm chart for Kubernetes
 
 
 ## Introduction
@@ -15,8 +15,6 @@ Creates an ingressClass (and Optional ingressClassParams) for use with AWS ALB I
 ## Installing the Chart
 **Note**: You need to install aws-alb-ingress-controller..
 
-
-Install the AWS Load Balancer controller, if using iamserviceaccount
 ```shell script
 helm install -i alb-ingress-class
 ```
