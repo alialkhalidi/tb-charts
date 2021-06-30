@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: {{ include "alb-ingress-class.ingressClassName" . }}
+  labels:
+    {{- include "alb-ingress-class.labels" . | nindent 4 }}
+spec:
+  controller: ingress.k8s.aws/alb
+{{- if .Values.ingressClass.parameters}}
+  parameters:
+    apiGroup: elbv2.k8s.aws
+    kind: IngressClassParams
+    name: {{ .Values.ingressClass.parameters.name }}
+{{- end }}

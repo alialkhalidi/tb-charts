@@ -1,0 +1,11 @@
+{{- if .Values.ingressClassParams.create }}
+apiVersion: elbv2.k8s.aws/v1beta1
+kind: IngressClassParams
+metadata:
+  name: {{ include "alb-ingress-class.ingressClassParamsName" . }}
+  labels:
+    {{- include "alb-ingress-class.labels" . | nindent 4 }}
+{{- with .Values.ingressClassParams.spec }}
+spec: {{- toYaml . | nindent 2 }}
+{{- end }}
+{{- end }}

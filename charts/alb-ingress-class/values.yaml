@@ -1,0 +1,14 @@
+# Default values ALB ingressClass and ingressClassParams.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+nameOverride: ""
+
+ingressClass:
+  name: alb
+
+# The ingress class parameters. used to refine ingress features used.
+ingressClassParams:
+  name: default
+  create: false
